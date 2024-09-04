@@ -1,0 +1,17 @@
+site_name: ""
+site_url: https://1nit.online
+theme:
+  name: material
+  language: fr
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  palette:
+    scheme: slate
+    primary: orange
+    accent: amber
+    font:
+      text: Open Sans
+      code: Inconsolata
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true

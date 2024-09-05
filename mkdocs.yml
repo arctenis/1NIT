@@ -15,9 +15,21 @@ theme:
 markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 nav:
   - Accueil: index.md
   - Django: django/apprendre_django.md
   - Elixir: 
     - Apprendre Elixir: elixir/apprendre_elixir.md
     - Lancer Elixir: elixir/01_lancer_elixir.md
+  - Python:
+    - Slicing: python/slicing.md
+    - Unpacking: python/unpacking.md
+    - Projets:
+      - Pomodoro: python/projet_pomodoro.md

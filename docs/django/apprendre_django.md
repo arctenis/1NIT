@@ -1,4 +1,7 @@
-# Quels livres pour apprendre à utiliser Django ?
+# Apprendre Django
+
+Je n'ai pas encore vu de vidéos qui atteignent la qualité des livres que je
+vais vous recommander. 
 
 Je recommande la lecture de ces livres dans l'ordre suivant :
 

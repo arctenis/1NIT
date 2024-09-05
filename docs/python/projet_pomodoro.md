@@ -1,5 +1,21 @@
 # Coder un pomodoro
 
+**Niveau** : débutant
+
+**Prérequis** : 
+
+- Avoir Python installé sur sa machine
+- Ecrire un script Python
+- Utiliser un terminal et la ligne de commande
+- Exécuter un script Python
+
+## Comment lire ce document
+
+Ne copie pas le code au fur et à mesure. Lis une première fois. Puis, essaie de coder le script 
+sans regarder ce guide. Si tu es bloqué, reviens lire les explications.
+
+## Introduction
+
 Un pomodoro est une technique de gestion du temps. Elle consiste à travailler
 pendant 25 minutes, puis à faire une pause de 5 minutes. Après 4 pomodoros, on
 fait une pause de 15 à 30 minutes.
@@ -83,7 +99,6 @@ pouvoir les utiliser.
 ```python
 work_time = int(args[0])
 break_time = int(args[1])
-# work_time, break_time = map(int, args)
 ```
 
 La fonction `int` fournit par Python convertit une chaîne de caractères en
@@ -94,16 +109,6 @@ On accède aux éléments de la liste `args` par leur indice. L'indice du premie
 crochets comme tu peux le voir.
 
 Pour rappel, on compte à partir de 0 en informatique.
-
-J'ai mis en commentaire une autre façon de convertir les éléments de la liste
-`args` en entiers. C'est une technique appelée *unpacking*. Elle permet de
-déballer les éléments d'une liste dans des variables.
-
-Je ne l'utilise pas ici, mais elle aurait été pratique si jamais la liste était
-beaucoup plus longue.
-
-> Pour plus d'infos sur le *unpacking*, tu pourras lire [cet
-> article](unpacking.md).
 
 ## Afficher les durées
 
@@ -139,19 +144,66 @@ def countdown(total_minutes):
 Convertis le nombre de minutes en secondes.
 
 ```python
-    total_seconds = total_minutes * 60
+total_seconds = total_minutes * 60
 ```
 
 Maintenant, on va afficher le temps restant toutes les secondes. Pour cela, il
 va falloir boucler sur le nombre de secondes restantes.
 
 ```python
-    while total_seconds:
-        # Afficher le temps restant
-        time.sleep(1)
-        total_seconds -= 1
+while total_seconds:
+    # Afficher le temps restant
+    time.sleep(1)
+    total_seconds -= 1
 ```
 
+Concernant la boucle `while`, on peut utiliser un entier directement dans une
+condition, car un entier égal à zéro est considéré comme faux.
+
+Donc la boucle s'arrêtera dès que `total_seconds` sera égal à zéro.
+Tu vas afficher le temps restant au format `mm:ss`. Tu retrouveras souvent ce
+type d'abréviation pour la mesure du temps. `mm` pour les minutes et `ss` pour
+les secondes.
+
+Pour ça, il faut que tu calcules les minutes et les secondes restantes.
+
+```python
+mins, secs = divmod(total_seconds, 60)
+```
+
+`divmod` est une fonction qui divise un nombre par un autre et retourne le
+résultat de la division et le reste de la division. 
+
+Pense aux divisions avec reste telles qu'on les faisait à l'école.
+
+`divmod` renvoie un *tuple* de deux éléments. C'est pour ça qu'on peut les
+assigner à deux variables en même temps.
+
+Ici, on divise le nombre de secondes restantes par 60. `mins` contient le
+résultat de la division et `secs` le reste.
+
+Puis il s'agit d'afficher tout ça.
+
+```python
+timeformat = f"{mins:02d}:{secs:02d}"
+print(timeformat, end="\r")
+```
+
+`f"{mins:02d}"` signifie que tu veux afficher `mins` sur deux caractères. Si
+`mins` est inférieur à 10, il sera complété par un zéro.
+
+Même chose pour les secondes.
+
+`end="\r"` permet de revenir au début de la ligne. C'est pour que le temps
+restant soit affiché sur la même ligne. 
+
+L'option `end` de la fonction `print` permet de spécifier le caractère qui sera
+ajouté à la fin de la chaîne à afficher. 
+
+Par défaut, c'est un retour à la ligne. Du coup, on le remplace par un retour
+au début de la ligne : `\r`.
+
+Voici la fonction complète :
 
 ```python
 def countdown(total_minutes):
@@ -161,8 +213,70 @@ def countdown(total_minutes):
         mins, secs = divmod(total_seconds, 60)
         timeformat = f"{mins:02d}:{secs:02d}"
         print("", end="\r")  # Clear the line
-        print(timeformat, end="\r")  # Print the time on the same line
+        print(timeformat, end="\r") 
         time.sleep(1)
         total_seconds -= 1
 ```
 
+J'ai ajouté une ligne pour effacer la ligne avant d'afficher le temps restant.
+
+
+## Tout le script
+
+```python
+#!/usr/bin/python3
+"""
+Pomodoro timer in the terminal
+"""
+
+import time
+import sys
+
+
+def countdown(total_minutes):
+    total_seconds = total_minutes * 60
+    while total_seconds:
+        mins, secs = divmod(total_seconds, 60)
+        timeformat = f"{mins:02d}:{secs:02d}"
+        print("", end="\r")
+        print(timeformat, end="\r") 
+        time.sleep(1)
+        total_seconds -= 1
+
+
+args = sys.argv[1:]
+
+if len(args) != 2:
+    print("Usage: python pomo.py <work_time> <break_time>")
+    print("Time in minutes")
+    print("Example: python pomo.py 25 5")
+    sys.exit(1)
+
+work_time = int(args[0])
+break_time = int(args[1])
+
+print(f"Work time: {work_time} minutes")
+print(f"Break time: {break_time} minutes")
+print("Press Ctrl+C to exit")
+
+print("WORK")
+countdown(work_time)
+
+print("BREAK")
+countdown(break_time)
+
+print("Time's up!")
+sys.exit(0)
+```
+
+Pour finir, on lance le compte à rebours pour le travail, puis pour la pause.
+Et on quitte proprement le script avec le code 0.
+
+## Conclusion
+
+Tu as codé un script Python qui affiche un compte à rebours dans le terminal.
+
+Tu as pu voir :
+
+- Comment récupérer les arguments passés au script
+- Comment afficher des messages dynamiques dans le terminal

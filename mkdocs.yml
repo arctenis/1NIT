@@ -5,6 +5,8 @@ theme:
   language: fr
   logo: assets/logo.png
   favicon: assets/favicon.png
+  features:
+    - navigation.footer
   palette:
     scheme: slate
     primary: orange
@@ -12,6 +14,12 @@ theme:
     font:
       text: Open Sans
       code: Inconsolata
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/arctenis
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/nicolas-chartier-b48092239
 markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -28,6 +36,7 @@ nav:
   - Elixir: 
     - Apprendre Elixir: elixir/apprendre_elixir.md
     - Lancer Elixir: elixir/01_lancer_elixir.md
+    - Pattern Matching: elixir/02_pattern_matching.md
   - Python:
     - Slicing: python/slicing.md
     - Unpacking: python/unpacking.md

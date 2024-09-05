@@ -5,4 +5,19 @@
          <lastmod>2024-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://1nit.online/django/apprendre_django/</loc>
+         <lastmod>2024-09-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1nit.online/elixir/01_lancer_elixir/</loc>
+         <lastmod>2024-09-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1nit.online/elixir/apprendre_elixir/</loc>
+         <lastmod>2024-09-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>

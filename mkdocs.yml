@@ -15,3 +15,9 @@ theme:
 markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
+nav:
+  - Accueil: index.md
+  - Django: django/apprendre_django.md
+  - Elixir: 
+    - Apprendre Elixir: elixir/apprendre_elixir.md
+    - Lancer Elixir: elixir/01_lancer_elixir.md

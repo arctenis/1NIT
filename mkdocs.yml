@@ -8,11 +8,11 @@ theme:
   features:
     - navigation.footer
   palette:
-    scheme: slate
-    primary: orange
-    accent: amber
+    scheme: default
+    primary: white
+    accent: grey
     font:
-      text: Open Sans
+      text: Roboto
       code: Inconsolata
 extra:
   social:
@@ -38,6 +38,7 @@ nav:
     - Lancer Elixir: elixir/01_lancer_elixir.md
     - Pattern Matching: elixir/02_pattern_matching.md
   - Python:
+    - Variables: python/variables.md
     - Slicing: python/slicing.md
     - Unpacking: python/unpacking.md
     - Projets:

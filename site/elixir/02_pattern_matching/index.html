@@ -6,30 +6,30 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guides et tutoriels. Tech | Programmation | Python | Linux">
       
       
-      
-        <link rel="canonical" href="https://1nit.online/">
-      
+        <link rel="canonical" href="https://1nit.online/elixir/02_pattern_matching/">
       
       
-        <link rel="next" href="django/apprendre_django/">
+        <link rel="prev" href="../01_lancer_elixir/">
       
       
-      <link rel="icon" href="assets/favicon.png">
+        <link rel="next" href="../../python/slicing/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
     
     
       
-        <title>1nit - </title>
+        <title>Pattern Matching - </title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bienvenue-sur-1nit-prononcer-init" class="md-skip">
+        <a href="#pattern-matching" class="md-skip">
           Aller au contenu
         </a>
       
@@ -88,9 +88,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
+    <a href="../.." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1nit
+              Pattern Matching
             
           </span>
         </div>
@@ -182,9 +182,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
+    <a href="../.." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     
@@ -196,30 +196,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Accueil
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -228,62 +208,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#guides-et-tutoriels" class="md-nav__link">
-    <span class="md-ellipsis">
-      Guides et tutoriels.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#youtube" class="md-nav__link">
-    <span class="md-ellipsis">
-      Youtube
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#roadmap" class="md-nav__link">
-    <span class="md-ellipsis">
-      Roadmap
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#qui-suis-je" class="md-nav__link">
-    <span class="md-ellipsis">
-      Qui suis-je ?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -295,7 +219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="django/apprendre_django/" class="md-nav__link">
+      <a href="../../django/apprendre_django/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -312,17 +236,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -336,7 +262,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Elixir
@@ -350,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="elixir/apprendre_elixir/" class="md-nav__link">
+      <a href="../apprendre_elixir/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -371,7 +297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="elixir/01_lancer_elixir/" class="md-nav__link">
+      <a href="../01_lancer_elixir/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -389,10 +315,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="elixir/02_pattern_matching/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -401,6 +336,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -455,7 +391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="python/slicing/" class="md-nav__link">
+      <a href="../../python/slicing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -476,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="python/unpacking/" class="md-nav__link">
+      <a href="../../python/unpacking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="python/projet_pomodoro/" class="md-nav__link">
+      <a href="../../python/projet_pomodoro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -581,50 +517,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#guides-et-tutoriels" class="md-nav__link">
-    <span class="md-ellipsis">
-      Guides et tutoriels.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#youtube" class="md-nav__link">
-    <span class="md-ellipsis">
-      Youtube
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#roadmap" class="md-nav__link">
-    <span class="md-ellipsis">
-      Roadmap
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#qui-suis-je" class="md-nav__link">
-    <span class="md-ellipsis">
-      Qui suis-je ?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -638,37 +530,61 @@
                   
 
 
-<h1 id="bienvenue-sur-1nit-prononcer-init">Bienvenue sur 1NIT (prononcer INIT)</h1>
-<h2 id="guides-et-tutoriels">Guides et tutoriels.</h2>
-<p>Toujours en construction, ce site est un recueil de guides et tutoriels sur des
-sujets variés. Vous y trouverez des articles sur la programmation,
-l'utilisation de Linux, et comment bien débuter et apprendre en autodidacte.</p>
-<h2 id="youtube">Youtube</h2>
-<p>Sur la chaîne <a href="https://youtube.com/@1nit4all">Youtube</a>, vous pourrez en commentaire des vidéos :
-- poser des questions sur les sujets abordés
-- suggérer de nouveaux sujets
-- me signaler des erreurs ;)</p>
-<h2 id="roadmap">Roadmap</h2>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Les vidéos seront sur le site arrangées dans un curriculum</li>
-</ul>
-<h2 id="qui-suis-je">Qui suis-je ?</h2>
-<p>J'accompagne des étudiants sur leur formation Python et Django. Du coup, je
-vois bien les difficultés que rencontrent les débutants et les questions sur
-lesquelles ils bloquent. J'ai décidé d'en faire des articles pour aider le plus
-grand nombre.</p>
-<p>Je suis développeur fullstack Django disponible pour des missions freelance en
-full remote. Je code des applications web au frontend léger avec HTMX et
-AlpineJS.</p>
+<h1 id="pattern-matching">Pattern matching</h1>
+<p>Normalement, c'est à ce moment que je devrais parler des variables dans Elixir.</p>
+<p>Lance l'interpréteur <code>iex</code>.</p>
+<p>Et tape : </p>
+<div class="language-elixir highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="mi">1</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="n">x</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="mi">1</span>
+</span></code></pre></div>
+<p>On pourrait dire que <code>x</code> est une variable. Elle contient la valeur <code>1</code>.</p>
+<p>Sauf que non.</p>
+<div class="language-elixir highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="mi">1</span>
+</span></code></pre></div>
+<p>Cette expression est vraie. <code>x</code> est égal à <code>1</code>. En fait, les deux côtés de
+l'opérateur <code>=</code> sont égaux.</p>
+<div class="language-elixir highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="o">**</span><span class="w"> </span><span class="p">(</span><span class="nc">MatchError</span><span class="p">)</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">match</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="n">hand</span><span class="w"> </span><span class="n">side</span><span class="w"> </span><span class="ss">value</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+</span></code></pre></div>
+<p>Cette expression est fausse, car <code>x</code> n'est pas égal à <code>2</code>.</p>
+<p>Elixir ne va seulement changer la valeur qui est à gauche de l'opérateur <code>=</code>. A
+droite, une variable va être remplacée par sa valeur.</p>
+<div class="language-elixir highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;charlie&quot;</span><span class="p">]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">[</span><span class="s2">&quot;alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;charlie&quot;</span><span class="p">]</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">list</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">[</span><span class="s2">&quot;alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;charlie&quot;</span><span class="p">]</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="s2">&quot;alice&quot;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="s2">&quot;bob&quot;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="n">c</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="s2">&quot;charlie&quot;</span>
+</span></code></pre></div>
+<p>Elixir va essayer de faire correspondre le contenu de la variable de droite
+avec la variable de gauche.</p>
+<p>Un autre exemple :</p>
+<div class="language-elixir highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="mi">24</span><span class="p">]</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="mi">24</span><span class="p">]</span>
+</span></code></pre></div>
+<p>Comme les deuxièmes éléments des deux listes sont égaux, Elixir va affecter la
+valeur <code>6</code> à la variable <code>a</code> et la valeur <code>24</code> à la variable <code>c</code>.</p>
+<div class="language-elixir highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;charlie&quot;</span><span class="p">]</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">[</span><span class="s2">&quot;alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;charlie&quot;</span><span class="p">]</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">iex</span><span class="o">&gt;</span><span class="w"> </span><span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;bill&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">list</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="o">**</span><span class="w"> </span><span class="p">(</span><span class="nc">MatchError</span><span class="p">)</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">match</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="n">hand</span><span class="w"> </span><span class="n">side</span><span class="w"> </span><span class="ss">value</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;charlie&quot;</span><span class="p">]</span>
+</span></code></pre></div>
+<p>Ici, Elixir n'arrive pas à faire correspondre le contenu de la variable <code>list</code>
+à la partie gauche.</p>
+<p>TODO</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -691,15 +607,31 @@ AlpineJS.</p>
       
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
+          
+          <a href="../01_lancer_elixir/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Lancer Elixir">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Lancer Elixir
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="django/apprendre_django/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Django">
+          <a href="../../python/slicing/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Slicing">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Django
+                Slicing
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -759,10 +691,10 @@ AlpineJS.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.footer"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>

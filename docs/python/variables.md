@@ -1,6 +1,6 @@
 # Variables et affectations
 
-**Niveau** : intermédiaire
+**Niveau** : Intermédiaire
 
 **Prérequis** :
 
@@ -62,5 +62,17 @@ le signe `=`.
 | a, *b = 0, 1, 2, 3  | Affectation étendue   |
 | a += 1              | Affectation augmentée |
 
+Tu n'as pas à retenir ces noms par cœur.
 
+En vrai, seule la première est indispensable, mais étant donné que tu risques
+de trouver les autres, autant les connaître.
+
+Les deux premières affectations sont des affectations basiques, je ne vais pas
+revenir dessus.
+
+La troisième quant à elle, est bien une affectation de tuple, malgré l'absence
+de parenthèses. Python crée automatiquement un tuple à partir des éléments
+séparés par des virgules.
+
+> Pour plus d'infos sur les tuples, tu pourras lire [cet article](types_objets.md) sur les types d'objets.
 

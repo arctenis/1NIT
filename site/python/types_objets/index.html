@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://arctenis.github.io/1NIT/python/slicing/">
+        <link rel="canonical" href="https://arctenis.github.io/1NIT/python/types_objets/">
       
       
-        <link rel="prev" href="../types_objets/">
+        <link rel="prev" href="../variables/">
       
       
-        <link rel="next" href="../unpacking/">
+        <link rel="next" href="../slicing/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Slicing - </title>
+        <title>Types d'objets - </title>
       
     
     
@@ -71,11 +71,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#le-slicing" class="md-skip">
-          Aller au contenu
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slicing
+              Types d'objets
             
           </span>
         </div>
@@ -399,27 +394,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../types_objets/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Types d'objets
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -429,21 +403,30 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
   
   <span class="md-ellipsis">
-    Slicing
+    Types d'objets
   </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+      </a>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slicing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,53 +435,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#syntaxe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Syntaxe
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemples
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#remarque" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remarque
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -613,43 +549,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#syntaxe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Syntaxe
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemples
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#remarque" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remarque
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -664,29 +563,9 @@
                   
 
 
-<h1 id="le-slicing">Le slicing</h1>
-<p>Le slicing est une technique qui te permet de récupérer une partie d'une liste.</p>
-<h2 id="syntaxe">Syntaxe</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">liste</span><span class="p">[</span><span class="n">debut</span><span class="p">:</span><span class="n">fin</span><span class="p">:</span><span class="n">pas</span><span class="p">]</span>
-</span></code></pre></div>
-<ul>
-<li><code>debut</code> : l'indice de départ de la partie à récupérer. Si tu ne précises pas de
-  valeur, la partie commence à l'indice 0.</li>
-<li><code>fin</code> : l'indice de fin de la partie à récupérer. Si tu ne précises pas de valeur,
-  la partie se termine à la fin de la liste.</li>
-<li><code>pas</code> : le pas de la partie à récupérer. Si tu ne précises pas de valeur, le
-  pas est de 1.</li>
-</ul>
-<h2 id="exemples">Exemples</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">liste</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span> <span class="c1"># [2, 3, 4]</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span> <span class="c1"># [0, 1, 2, 3, 4]</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">[</span><span class="mi">5</span><span class="p">:])</span> <span class="c1"># [5, 6, 7, 8, 9]</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># [0, 2, 4, 6, 8]</span>
-</span></code></pre></div>
-<h2 id="remarque">Remarque</h2>
-<p>Le slicing ne modifie pas la liste d'origine. Il retourne une nouvelle liste.</p>
+  <h1>Types d'objets</h1>
+
+
 
 
 
@@ -716,7 +595,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../types_objets/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Types d&#39;objets">
+          <a href="../variables/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Variables">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -726,20 +605,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Types d'objets
+                Variables
               </div>
             </div>
           </a>
         
         
           
-          <a href="../unpacking/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Unpacking">
+          <a href="../slicing/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Slicing">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Unpacking
+                Slicing
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -280,3 +280,12 @@ Tu as pu voir :
 
 - Comment récupérer les arguments passés au script
 - Comment afficher des messages dynamiques dans le terminal
+
+Quelques pistes d'amélioration : 
+
+Que se passe-t-il si l'utilisateur entre un nombre négatif ou une chaîne de caractères à la place des entiers attendus ?
+
+Que peux-tu faire pour résoudre ce problème ?
+
+Peut-être as-tu envie d'utiliser une bibliothèque pour avoir une GUI ? Essaie
+d'utiliser `tkinter`.

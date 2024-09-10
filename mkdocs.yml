@@ -1,5 +1,5 @@
 site_name: ""
-site_url: https://1nit.online
+site_url: https://arctenis.github.io/1NIT
 theme:
   name: material
   language: fr
@@ -8,12 +8,12 @@ theme:
   features:
     - navigation.footer
   palette:
-    scheme: default
-    primary: white
-    accent: grey
-    font:
-      text: Roboto
-      code: Inconsolata
+    scheme: slate
+    primary: orange
+    accent: amber
+  font:
+    text: Fira Sans
+    code: Fira Code
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -39,6 +39,7 @@ nav:
     - Pattern Matching: elixir/02_pattern_matching.md
   - Python:
     - Variables: python/variables.md
+    - Types d'objets: python/types_objets.md
     - Slicing: python/slicing.md
     - Unpacking: python/unpacking.md
     - Projets:

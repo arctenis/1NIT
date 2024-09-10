@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://arctenis.github.io/1NIT/python/slicing/">
+        <link rel="canonical" href="https://arctenis.github.io/1NIT/python/variables/">
       
       
-        <link rel="prev" href="../types_objets/">
+        <link rel="prev" href="../../elixir/02_pattern_matching/">
       
       
-        <link rel="next" href="../unpacking/">
+        <link rel="next" href="../types_objets/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Slicing - </title>
+        <title>Variables - </title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#le-slicing" class="md-skip">
+        <a href="#variables-et-affectations" class="md-skip">
           Aller au contenu
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slicing
+              Variables
             
           </span>
         </div>
@@ -378,10 +378,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -390,6 +410,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comment-lire-ce-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment lire ce document ?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-daffectations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types d'affectations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -420,30 +487,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Slicing
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../slicing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,53 +499,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#syntaxe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Syntaxe
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemples
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#remarque" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remarque
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -623,27 +623,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#syntaxe" class="md-nav__link">
+  <a href="#comment-lire-ce-document" class="md-nav__link">
     <span class="md-ellipsis">
-      Syntaxe
+      Comment lire ce document ?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemples" class="md-nav__link">
+  <a href="#principes" class="md-nav__link">
     <span class="md-ellipsis">
-      Exemples
+      Principes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#remarque" class="md-nav__link">
+  <a href="#types-daffectations" class="md-nav__link">
     <span class="md-ellipsis">
-      Remarque
+      Types d'affectations
     </span>
   </a>
   
@@ -664,29 +664,91 @@
                   
 
 
-<h1 id="le-slicing">Le slicing</h1>
-<p>Le slicing est une technique qui te permet de récupérer une partie d'une liste.</p>
-<h2 id="syntaxe">Syntaxe</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">liste</span><span class="p">[</span><span class="n">debut</span><span class="p">:</span><span class="n">fin</span><span class="p">:</span><span class="n">pas</span><span class="p">]</span>
-</span></code></pre></div>
+<h1 id="variables-et-affectations">Variables et affectations</h1>
+<p><strong>Niveau</strong> : Intermédiaire</p>
+<p><strong>Prérequis</strong> :</p>
 <ul>
-<li><code>debut</code> : l'indice de départ de la partie à récupérer. Si tu ne précises pas de
-  valeur, la partie commence à l'indice 0.</li>
-<li><code>fin</code> : l'indice de fin de la partie à récupérer. Si tu ne précises pas de valeur,
-  la partie se termine à la fin de la liste.</li>
-<li><code>pas</code> : le pas de la partie à récupérer. Si tu ne précises pas de valeur, le
-  pas est de 1.</li>
+<li>Connaître les types de données en Python (chaînes de caractères, listes,
+  tuples...)</li>
+<li>Connaître les opérations de base en Python</li>
+<li>Avoir déjà utilisé des variables en Python</li>
 </ul>
-<h2 id="exemples">Exemples</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">liste</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span> <span class="c1"># [2, 3, 4]</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span> <span class="c1"># [0, 1, 2, 3, 4]</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">[</span><span class="mi">5</span><span class="p">:])</span> <span class="c1"># [5, 6, 7, 8, 9]</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># [0, 2, 4, 6, 8]</span>
-</span></code></pre></div>
-<h2 id="remarque">Remarque</h2>
-<p>Le slicing ne modifie pas la liste d'origine. Il retourne une nouvelle liste.</p>
+<h2 id="comment-lire-ce-document">Comment lire ce document ?</h2>
+<p>Même s'il n'y a pas d'exercices dans ce guide, tu peux lancer un interpréteur
+Python pour tester les différents exemples de code.</p>
+<p>Les variables sont certes un sujet pour débutants, mais il risque de te rebuter
+si tu débutes. Il vaut mieux avoir déjà manipulé des variables en Python avant
+de creuser ce sujet comme présenté ici.</p>
+<h2 id="principes">Principes</h2>
+<p>Quelques principes à connaître qui auront un impact plus tard :</p>
+<p><strong>Les affectations créent des références à des objets.</strong></p>
+<p>Python stocke des références à des objets dans des noms, aussi appelés
+variables. Les variables ne stockent pas directement les objets, mais des
+références à ces objets. On peut considérer les variables comme des pointeurs
+plutôt que des "boîtes" qui contiendraient des données.</p>
+<p><strong>Les noms sont créés lorsqu'ils sont affectés.</strong></p>
+<p>Les noms de variables n'ont pas besoin d'être déclarés explicitement. Ils sont
+créés lorsqu'ils sont affectés pour la première fois.</p>
+<p>Une fois l'affectation faite, le nom sera remplacé par la valeur de l'objet
+vers lequel il pointe.</p>
+<p><strong>Les noms doivent être affectés avant d'être utilisés.</strong></p>
+<p>Python va levé une exception si tu essaies d'utiliser un nom qui n'a pas été
+affecté.</p>
+<p><strong>Certaines instructions effectuent des affectations implicites.</strong></p>
+<p>Par exemple, les importations de modules, les affectations dans les boucles
+<code>for</code>, les affectations dans les listes en compréhension...</p>
+<p>Ces affectations fonctionnent comme les autres, elles n'utilisent pas forcément
+le signe <code>=</code>.</p>
+<h2 id="types-daffectations">Types d'affectations</h2>
+<table>
+<thead>
+<tr>
+<th>Instruction</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a = 0</td>
+<td>Affectation basique</td>
+</tr>
+<tr>
+<td>a = b = 0</td>
+<td>Affectation multiple</td>
+</tr>
+<tr>
+<td>a, b = 0, 1</td>
+<td>Affectation de tuple</td>
+</tr>
+<tr>
+<td>[a, b] = [0, 1]</td>
+<td>Affectation de liste</td>
+</tr>
+<tr>
+<td>a, b, c, d = "1234"</td>
+<td>Affectation de chaîne</td>
+</tr>
+<tr>
+<td>a, *b = 0, 1, 2, 3</td>
+<td>Affectation étendue</td>
+</tr>
+<tr>
+<td>a += 1</td>
+<td>Affectation augmentée</td>
+</tr>
+</tbody>
+</table>
+<p>Tu n'as pas à retenir ces noms par cœur.</p>
+<p>En vrai, seule la première est indispensable, mais étant donné que tu risques
+de trouver les autres, autant les connaître.</p>
+<p>Les deux premières affectations sont des affectations basiques, je ne vais pas
+revenir dessus.</p>
+<p>La troisième quant à elle, est bien une affectation de tuple, malgré l'absence
+de parenthèses. Python crée automatiquement un tuple à partir des éléments
+séparés par des virgules.</p>
+<blockquote>
+<p>Pour plus d'infos sur les tuples, tu pourras lire <a href="../types_objets/">cet article</a> sur les types d'objets.</p>
+</blockquote>
 
 
 
@@ -716,7 +778,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../types_objets/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Types d&#39;objets">
+          <a href="../../elixir/02_pattern_matching/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Pattern Matching">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -726,20 +788,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Types d'objets
+                Pattern Matching
               </div>
             </div>
           </a>
         
         
           
-          <a href="../unpacking/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Unpacking">
+          <a href="../types_objets/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Types d&#39;objets">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Unpacking
+                Types d'objets
               </div>
             </div>
             <div class="md-footer__button md-icon">
